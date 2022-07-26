@@ -25,3 +25,15 @@ logging:
     com.xn2001: debug
   pattern:
     dateformat: MM-dd HH:mm:ss:SSS
+#feign日志设置
+#feign:
+#  client:
+#    config:
+#      userservice:  # 针对某个微服务的配置
+#        loggerLevel: FULL # 日志级别
+#feign开启httpClient的支持
+feign:
+  httpclient:
+    enabled: true
+    max-connections: 200
+    max-connections-per-route: 50
